@@ -1,0 +1,10 @@
+Model;test_F1;train_acc;test_acc;batch;lr;Callbacks;train_param;ep
+CNN (type LeNet);97,2%;98,9%;97,2%;32;10^-4;NA;26108998;20
+CNN (type LeNet);95,2%;98,2%;95,2%;128;10^-4;NA;26108998;20
+VGG16 freezed;97,9%;98,6%;97,9%;128;10^-3;LearningRateScheduler, EarlyStopping;1069606;7
+VGG16 unfreezed (4 layers);99,5%;99,9%;99,5%;128;10^-3;LearningRateScheduler, ReduceLROnPlateau, EarlyStopping;8149030;6
+ResNet50 freezed;98,9%;99,6%;98,9%;128;10^-3;LearningRateScheduler, ReduceLROnPlateau, EarlyStopping;2642470;7
+ResNet50 unfreezed (10 layers);99,4%;99,9%;99,4%;128;10^-4;ReduceLROnPlateau, EarlyStopping;7108134;8
+InceptionV3 freezed;93,9%;95,0%;93,9%;128;10^-3;ReduceLROnPlateau, EarlyStopping;2642470;5
+InceptionV3 unfreezed (12 layers);97,3%;99,0%;97,3%;128;10^-3;ReduceLROnPlateau, EarlyStopping;3036198;4
+InceptionV3 unfreezed (23 layers);97,9%;99,8%;97,9%;128;10^-3;ReduceLROnPlateau, EarlyStopping;5462566;6
